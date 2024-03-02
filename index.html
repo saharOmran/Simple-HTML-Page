@@ -5,13 +5,130 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Insert Favicon -->
-    <meta />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Insert Description -->
-    <meta />
+    <meta name="description" content="A Simple Html Page." />
     <!-- Page Title -->
     <title>First Practice</title>
-  </head>
-  <body>
-    <!-- create small page using mentioned tags in ReadMe.md -->
-  </body>
+    <style>
+       
+      header, nav, aside, footer, main, section, div {
+          margin: 10px;
+          padding: 10px;
+      }
+
+      h2 {
+          color: #464343;
+      }
+      
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 10px;
+      }
+      th, td {
+          border: 1px solid #ccc;
+          padding: 8px;
+          text-align: center;
+      }
+      li {
+          margin-bottom: 5px;
+      }
+      a {
+          text-decoration: none;
+          color: chocolate;
+      }
+      img {
+          max-width: 100%;
+      }
+      audio, video {
+          width: 100%;
+      }
+      footer{
+          background-color: #ccc;    
+      }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome</h1>
+</header>
+
+<nav>
+  <ul>
+      <li>first item</li>
+      <li>second item </li>
+      <li>third item
+          <ul>
+              <li>subset 1</li>
+              <li>subset 2</li>
+            </ul>
+      </li>
+  </ul>
+</nav>
+
+<aside>
+  <p>This is the sidebar content.</p>
+</aside>
+
+<main>
+  <p>main section.</p>
+  <section>
+      <h2>The list</h2>
+      <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+      </ul>
+  </section>
+
+  <section>
+      <div>
+          <span>Span element</span>
+          <h3>Subsection</h3>
+          <p>This is a subsection.</p>
+      </div>
+  </section>
+
+  <section>
+      <h2>Table</h2>
+      <table>
+          <tr>
+              <th>title 1</th>
+              <th>title 2</th>
+          </tr>
+          <tr>
+              <td>input 1</td>
+              <td>input 2</td>
+          </tr>
+          <tr>
+              <td>input 3</td>
+              <td>input 4</td>
+          </tr>
+      </table>
+  </section>
+
+  <section>
+      <h2>Media</h2>
+      <a href="#" alt="html page">This is a Link</a><br>
+      <img src="image.webp" alt="bob sponge">
+      <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          your browser does not support the audio
+      </audio>
+      <video controls>
+          <source src="video.mp4" type="video/mp4">
+          your browser does not support the video
+      </video>
+      <button type="button" onclick="alert('hi')">Click Me</button>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Page</p>
+</footer>
+
+</body>
 </html>
+
